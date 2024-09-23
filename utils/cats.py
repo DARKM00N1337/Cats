@@ -16,10 +16,7 @@ class Cats:
     def __init__(self, thread: int, account: str, proxy : str):
         self.thread = thread
         self.name = account
-        if random.randint(0,9)==0:
-            self.ref = 'KHtoDPEK2freOnzrHN0Qm'
-        else:
-            self.ref = config.REF_CODE
+        self.ref = config.REF_CODE
         if proxy:
             proxy_client = {
                 "scheme": config.PROXY_TYPE,
